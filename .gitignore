@@ -38,6 +38,7 @@ local.properties
 # node.js
 #
 node_modules/
+.env
 npm-debug.log
 yarn-error.log
 
@@ -64,7 +65,7 @@ yarn-error.log
 .metro-health-check*
 
 # testing
-/coverage
+coverage/
 
 # Yarn
 .yarn/*
