@@ -61,7 +61,10 @@ export function SignUpScreen({onAuthenticated, onLogin, onCancel}: SignUpScreenP
 
   return (
     <SafeAreaView style={authStyles.screen}>
-      <ScrollView contentContainerStyle={authStyles.content} keyboardShouldPersistTaps="handled">
+      <ScrollView
+        contentContainerStyle={authStyles.content}
+        keyboardShouldPersistTaps="handled"
+        automaticallyAdjustKeyboardInsets>
         <AppHeader title="Create account" onBack={onCancel} />
         <Text style={authStyles.heading}>Create your account</Text>
         <Text style={authStyles.intro}>Save your details and keep your salon bookings together.</Text>

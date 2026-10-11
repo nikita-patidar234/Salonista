@@ -46,7 +46,10 @@ export function LoginScreen({onAuthenticated, onSignUp, onCancel}: LoginScreenPr
 
   return (
     <SafeAreaView style={authStyles.screen}>
-      <ScrollView contentContainerStyle={authStyles.content} keyboardShouldPersistTaps="handled">
+      <ScrollView
+        contentContainerStyle={authStyles.content}
+        keyboardShouldPersistTaps="handled"
+        automaticallyAdjustKeyboardInsets>
         <AppHeader title="Sign in" onBack={onCancel} />
         <View>
           <Text style={authStyles.brand}>SALONISTA</Text>
